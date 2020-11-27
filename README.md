@@ -12,22 +12,22 @@ On the 27th of April 2016, the European Parliament adopted the [General Data Pro
 3. Has there been a change in trends in the viewing of critical terms related to the regulation after each one of the dates? (27.04.2016 & 25.05.2018)
 
 ## Proposed dataset
-We will retrieve our own dataset using the [Wikipedia REST API](https://wikimedia.org/api/rest_v1/) to obtain the pageviews data given the same list of keywords from the original paper “Chilling Effects: Online Surveillance and Wikipedia Use”. This tool allows us to conveniently extract data as JSON objects. We will consider data from german wikipedia domain (de.wikipedia) only. We aim to build a `.csv` file in a similar format as what we were provided in the first milestones to reproduce the figures of the original paper.
+We will retrieve our own dataset using the [Wikipedia REST API](https://wikimedia.org/api/rest_v1/) to obtain the pageviews data given the same list of keywords from the original paper “Chilling Effects: Online Surveillance and Wikipedia Use”. This tool allows us to conveniently extract data as JSON objects. We will consider data from German Wikipedia domain (`de.wikipedia`) only. We aim to build a `.csv` file in a format similar to what we were provided with in the first milestones to reproduce the figures of the original paper.
 
 ## Methods
-* **Keyword list**: Start from the same list of keywords (from US Homeland Security) as the original paper. Update this list of keywords to fit to the European GDPR by removing irrelevant keywords.
-* **Data collection**: Extract Wikipedia pageviews (as stated in Proposed datasets) for our list of keywords, across April 2015 - April 2017 for the first date and May 2017 - May 2019 for the second date. Primarily focus on German data (de.wikipedia), since we speculate this is the wikipedia domain whose fraction of European-only viewers is the most significant (with respect to other domains such as french Wikipedia including views from Canada and Africa for example).
+* **Keyword list**: Start from the same list of keywords (from US Homeland Security) as the original paper. Update this list of keywords to fit to European GDPR by removing irrelevant keywords.
+* **Data collection**: Extract Wikipedia pageviews (as stated in *Proposed datasets*) for our list of keywords, across April 2015 - April 2017 for the first date and May 2017 - May 2019 for the second date. Primarily focus on German data (`de.wikipedia`), since we speculate this is the Wikipedia domain whose fraction of European-only viewers is the most significant (with respect to other domains such as French Wikipedia including views from Canada and Africa for example).
 * **Data analysis**:
 Perform a primary analysis on German data, the same way as done in the article:
   * Compare “raw” means before and after interruption events.
   * Implement linear regression on the ITS dataset to provide an answer to our research questions which will be performed with and without control groups. We will implement two linear regressions for which we will illustrate how pre- and post-trends are affected by the two interruption events (27.04.2016 and 25.05.2018).
-* **Further Research**: Depending on the obtained data and preliminary results, evaluate the possibility to further answer our research questions with data from other domains (e.g es.wikipedia), used for example as control groups for which GDPR is irrelevant.
+* **Further Research**: Depending on the obtained data and preliminary results, evaluate the possibility to further answer our research questions with data from other domains (e.g `es.wikipedia`), used for example as control groups for which GDPR is irrelevant.
 
 ## Proposed timeline
-1. 30.11 - 04.12: We will first get the required german Wikipedia articles pageviews and aggregate them in monthly bins. In parallel, we will review the keyword list helping to provide more insightful answers to the inverse chilling effect research questions.
-2. 05.12 - 08.12: We will proceed with data wrangling, cleaning and preprocessing. We will also need to research for causes of possible inconsistencies (i.e. terrorism events/breaking news which created a significant change in traffic, which is independent of the trend).
-3. 08.12 - 13.12: Start the data analysis and visualizations parts. We will plot the inverse chilling effect trends using linear regression.
-4. 14.12 - 18.12: Prepare the report and the short video.
+1. **30.11 - 04.12**: We will first get the required German Wikipedia articles pageviews and aggregate them in monthly bins. In parallel, we will review the keyword list helping to provide more insightful answers to the inverse chilling effect research questions.
+2. **05.12 - 08.12**: We will proceed with data wrangling, cleaning and preprocessing. We will also need to research for causes of possible inconsistencies (i.e. terrorism events/breaking news which created a significant change in traffic, which is independent of the trend).
+3. **08.12 - 13.12**: Start the data analysis and visualizations parts. We will plot the inverse chilling effect trends using linear regression.
+4. **14.12 - 18.12**: Prepare the report and the short video.
 
 ![Timeline](Images/Planning.JPG?raw=true "Title")
 
@@ -41,4 +41,4 @@ Perform a primary analysis on German data, the same way as done in the article:
 
 ## Questions for TAs (optional)
 
-We had a small reflection considering the short video we had to send at the end of the milestone. Indeed, we were considering writing a paper and not implementing a story telling website. But in that case, what do you expect the video to look like? Shall we speak on a PowerPoint to present the results, or shall we use the notebook and interactively present it?
+We had a small reflection considering the short video we had to send at the end of the milestone. Indeed, we were considering writing a paper and not implementing a story telling website. But in that case, what do you expect the video to look like? Shall we speak on a PowerPoint to present the results, or should we use the notebook and interactively present it?
