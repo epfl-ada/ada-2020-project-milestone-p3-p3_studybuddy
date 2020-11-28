@@ -98,6 +98,8 @@ def main():
     print('\nBelow is a more readable report (exact matches are not reported):')
     case_mismatch, no_match = {}, {}
     for k , val in r.items():
+        if k == val:
+            continue
         if k.lower() == val.lower():
             case_mismatch[k] = val
         elif k != val:
