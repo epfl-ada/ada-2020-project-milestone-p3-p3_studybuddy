@@ -20,6 +20,25 @@ from concurrent.futures import ThreadPoolExecutor
 import pathlib
 
 
+def read_keywords(fname):
+    """Read and parse a file of keywords, supports comments (delimited by #)
+    :param fname: name of file containing newline-separated keywords
+    :return: list of strings
+    """
+    def process_line(line):
+        i = line.find('#')
+        if i == -1:
+            return line
+        return line[:i].strip()
+
+    with open(fname, 'r') as f:
+        data = f.read().strip('\n').split('\n')
+
+    # Handle comments
+    data = list(map(process_line, data))
+    return data
+
+
 def request(articles, domain='de', **kwargs):
     """Wraps the function PageviewsClient.article_views
 
@@ -74,7 +93,7 @@ def main():
 
     if not os.path.exists(args.template):
         raise ValueError(f'File "{args.template}" does not exist.')
-    if not '_template' in args.template:
+    if '_template' not in args.template:
         raise ValueError('The keywords file must contain `_template`')
 
     # ------ Setup
@@ -82,9 +101,8 @@ def main():
     wiki.set_lang(args.domain)
 
     # ------ Load keywords from file
-    with open(args.template, 'r') as f:
-        keywords = f.read().strip('\n').split('\n')
-        print(f'Loaded {len(keywords)} keywords')
+    keywords = read_keywords(args.template)
+    print(f'Loaded {len(keywords)} keywords')
 
     # ------ Fetch suggestions
     print('Fetching suggestions...')
@@ -114,7 +132,7 @@ def main():
     final_keywords = '\n'.join(r.values())
 
     outfile = pathlib.Path(args.template).stem
-    outfile = outfile[:outfile.rfind('_')]
+    outfile = outfile[:outfile.rfind('_')] + '_' + args.domain
     outfile += pathlib.Path(args.template).suffix
     with open(outfile, 'w') as f:
         f.write(final_keywords)
