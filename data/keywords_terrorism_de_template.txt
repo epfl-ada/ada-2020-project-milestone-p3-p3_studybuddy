@@ -1,0 +1,60 @@
+#
+# This contains all 48 keywords, originally the English ones
+# If you run update_keywords.py, you can review the suggestions
+# If you spot bad translation, you should edit keywords in the template (i.e. this file)
+# until they match the desired article
+#
+# For instance: "Extremism" has the suggestion "Matteo Salvini", so I replaced with "Extremismus"
+#
+# The notes "manually translated" means that I went to the english wikipedia
+# page and clicked on "Deutsch" under "Languages" in the left panel to find the corresponding German article
+# I only edited keywords that are badly translated (e.g. Terrorism -> Terrorismus, so I left it as is)
+
+Al Qaeda
+Terrorism
+Terror
+Attack
+Iraq
+Afghanistan
+Iran
+Pakistan
+Agro
+Environmental terrorism                       # translated to earth liberation front, as in english
+Eco-terrorism
+#Conventional weapon                          # translates to Konvention über bestimmte konventionelle Waffen
+#Weapons Grade                                # does not exist
+Dirty bomb
+Hochangereichertes Uran                       # manually translated from Nuclear enrichment
+#Nuclear                                      # REVIEW !!!! not a real (english) page, choose nuclear physics, engineering, ...
+Chemische Waffe                               # manually translated from Chemical Weapon
+Biologische Waffe                             # manually translated from Biological Weapon
+Ammonium nitrate                              # manually translated from Ammoniumnitrat
+Unkonventionelle Spreng- und Brandvorrichtung # manually translated from Improvised explosive device
+Abu Sayyaf
+Hamas
+FARC
+Irish republican army
+Euskadi ta askatasuna
+Hezbollah
+Tamil tigers
+PLO
+#Palestine liberation front             # this will be a duplicate of PLO right above
+Autobombe                               # manually translated from Car bomb
+Jihad
+Taliban
+#Suicide bomber                         # does not exist
+Selbstmordattentat                      # manually translated from Suicide attack
+al-Qaida auf der Arabischen Halbinsel   # manually translated from Al Qaeda in the Arabian Peninsula
+al-Qaida im Maghreb                     # Really same thing? manually translated Al Qaeda in the Islamic Maghreb
+Tehrik-i-Taliban Pakistan
+Yemen
+Pirates
+Extremismus                             # manually translated from Extremism (otherwise, ouptuts Matteo Salvini)
+Somalia
+Nigeria
+#Political radicalism                   # does not exist ? didn't find it
+Al-Shabaab
+Nationalism
+Recruitment                             # really useful ?
+Fundamentalism
+Islamist

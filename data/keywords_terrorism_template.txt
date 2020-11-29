@@ -1,3 +1,6 @@
+# Original keywords : copied form the article
+# Use `read_keywords()` function from `update_keywords.py` to parse this file
+
 Al Qaeda
 Terrorism
 Terror
@@ -13,7 +16,7 @@ Conventional weapon
 Weapons Grade
 Dirty bomb
 Nuclear enrichment
-Nuclear
+Nuclear                     # !!!! not a real page, choose nuclear physics, engineering, ...
 Chemical Weapon
 Biological Weapon
 Ammonium nitrate
@@ -30,7 +33,7 @@ Palestine liberation front
 Car bomb
 Jihad
 Taliban
-Suicide bomber
+Suicide bomber              # redirects to suicide attack
 Suicide attack
 Al Qaeda in the Arabian Peninsula
 Al Qaeda in the Islamic Maghreb
