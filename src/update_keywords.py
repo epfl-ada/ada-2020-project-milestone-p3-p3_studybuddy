@@ -1,7 +1,7 @@
 """Generate a keyword list based on a template so that it perfectly matches names of Wikipedia articles.
 
 Usage:
-    1. Create a text file of newline-separated keywords, filename must end with '_template'
+    1. Create a text file of newline-separated keywords, filename must end with '_template.<extension>'
     2. Go in root folder of project and run:
         $ python3 src/update_keywords.py <keyword-list-name>_template.txt <wiki-domain>
     3. Carefully review the output
@@ -36,6 +36,8 @@ def read_keywords(fname):
 
     # Handle comments
     data = list(map(process_line, data))
+    # Delete empty lines (those containing only comments)
+    data = list(filter(lambda s: len(s) > 0, data))
     return data
 
 
@@ -93,8 +95,8 @@ def main():
 
     if not os.path.exists(args.template):
         raise ValueError(f'File "{args.template}" does not exist.')
-    if '_template' not in args.template:
-        raise ValueError('The keywords file must contain `_template`')
+    if not args.template.split('.')[0].endswith('_template'):
+        raise ValueError('The keywords file must end with `_template`')
 
     # ------ Setup
     wiki.set_rate_limiting(rate_limit=True)
@@ -103,6 +105,9 @@ def main():
     # ------ Load keywords from file
     keywords = read_keywords(args.template)
     print(f'Loaded {len(keywords)} keywords')
+    #print(keywords)
+    #print(get_output_filename(args.template, args.domain))
+    #exit()
 
     # ------ Fetch suggestions
     print('Fetching suggestions...')
@@ -130,17 +135,32 @@ def main():
 
     # Write
     final_keywords = '\n'.join(r.values())
+    outfile = get_output_filename(args.template, args.domain)
 
-    outfile = pathlib.Path(args.template).stem
-    outfile = outfile[:outfile.rfind('_')] + '_' + args.domain
-    outfile += pathlib.Path(args.template).suffix
     with open(outfile, 'w') as f:
         f.write(final_keywords)
+    print(f'Written in file {outfile}')
 
 
 def pretty_print_dic(dic):
     for k, v in dic.items():
         print(f'- {k}: {v}')
+
+
+def get_output_filename(template_fname, language):
+    # File name without extension
+    outfile = pathlib.Path(template_fname).stem
+    # Remove the "_template" part in file name
+    outfile = outfile[:outfile.rfind('_')]
+    # Add language suffix if not in file name yet
+    if f'_{language}' not in template_fname:
+        outfile += f'_{language}'
+    outfile += pathlib.Path(template_fname).suffix
+
+    # Add parent directory
+    outfile = os.path.join(os.path.dirname(template_fname), outfile)
+
+    return outfile
 
 
 if __name__ == '__main__':
