@@ -110,3 +110,44 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
+def process_aggreg_file(fp, kwd_lst):
+    def read_aggreg_file(fp):
+        return pd.read_csv(
+            fp,
+            compression='gzip'
+        )
+
+    def extract_kwds(df, kwd_lst):
+        #print('df.article for', fp)
+        mask = df.article.isin(kwd_lst)
+        return df[mask]
+
+    try:
+        print(f'Loading {fp}')
+        df = read_aggreg_file(fp)
+        #print(f'Loaded {fp}')
+    except EOFError as e:
+        print(f'<ERROR> while reading {fp}: {e}')
+        df = pd.DataFrame()
+
+    return extract_kwds(df, kwd_lst)
+
+
+def extract_keywords(keyword_lst):
+    """Not intended to be used in a script, but call this function in an interpreter.
+    You should manually test file integrity before running this, if you don't wanna loose faith in life :)
+        $ gunzip -t <file>.gz
+    Or even better, check all at once:
+        $ for f in *; do echo $f; gunzip -t $f; done
+    """
+
+    aggreg_files = os.listdir(path_aggreg)
+    aggreg_files = [os.path.join(path_aggreg, fname) for fname in aggreg_files]
+    with ThreadPoolExecutor(2) as executor:
+        f = lambda fp: process_aggreg_file(fp, keyword_lst)
+        data = executor.map(f, aggreg_files)
+        df = pd.concat(data)
+
+    return df
