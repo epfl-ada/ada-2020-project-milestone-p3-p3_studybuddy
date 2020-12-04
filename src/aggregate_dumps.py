@@ -3,10 +3,12 @@ Read raw dump files, extract certain domains only and aggregate hourly data to d
 """
 
 import pandas as pd
+from pandas.errors import ParserError
 from download_dumps import path_data
 import os
 from concurrent.futures import ThreadPoolExecutor
 import multiprocessing
+from time import time
 
 
 keep_domains = [
@@ -17,16 +19,32 @@ path_aggreg = '/media/maousi/Raw/ada-wiki/aggreg'
 
 
 def read_dump_file(fp):
+    """Load gzip-compressed csv file"""
     df = pd.read_csv(fp,
                      compression='gzip',
                      sep=' ',
                      header=None,
-                     usecols=[0,1,2])
+                     usecols=[0,1,2],
+                     # quoting=3 is a workaround of issue
+                     # "Error tokenizing data. C error: EOF inside string starting at row ..."
+                     quoting=3)
+    # except ParserError as e:
+    #     print('ParserError, using python engine')
+    #     df = pd.read_csv(fp,
+    #                      compression='gzip',
+    #                      sep=' ',
+    #                      header=None,
+    #                      usecols=[0,1,2],
+    #                      engine='python',
+    #                      quoting=3)
+
     df.columns = ['domain', 'article', 'views']
     return df
 
 
 def process_dump_file(fp):
+    """Load dump file, keep only domains specified in `keep_domains`,
+    remove items where article name or domain is missing."""
     df = read_dump_file(fp)
     print('Loaded', fp)
 
@@ -35,41 +53,60 @@ def process_dump_file(fp):
     return df
 
 
+
 def aggregate_dump_files(filelist):
-    with ThreadPoolExecutor(2) as executor:
+    """Load files in the list, group by domain and article and sum"""
+    with ThreadPoolExecutor(4) as executor:
         data = executor.map(process_dump_file, filelist)
         df = pd.concat(data)
 
     aggreg = df.groupby(['domain', 'article']).sum()
+    aggreg = aggreg.reset_index()
     return aggreg
+
+
+def get_aggreg_filepath(day, path):
+    outfile = os.path.join(path, f'data_{day}.gz')
+    return outfile
 
 
 def main():
     files = os.listdir(path_data)
+    files = list(filter(lambda fname: fname.endswith('.gz'), files))
 
     unique_days = set(map(lambda fname: fname.split('-')[1], files))
-    data = []
+
     for day in unique_days:
+        outfile = get_aggreg_filepath(day, path_aggreg)
+        if os.path.exists(outfile):
+            print('<WARNING> Skipping', day)
+            continue # don't re-process data that was already aggregated
+
+        print('Processing day', day)
+
+        # Gather files that correspond to the same day
         files_day = filter(lambda fname: day in fname, files)
-        print('Loading', day)
-        files_day = list(map(lambda fname: os.path.join(path_data, fname), files_day))[:2]
+        files_day = list(map(lambda fname: os.path.join(path_data, fname), files_day))
+        # Warn if not 24 files are present
         if len(files_day) != 24:
             print(f'<WARNING> only {len(files_day)} files for date {day} <WARNING>')
 
+        # Load all files for the day
+        start = time()
         df = aggregate_dump_files(files_day)
-        print(f'Loaded and processed data of day {day}')
-        df['date'] = day
-        data.append(df)
+        print(f'Loaded and processed data of day {day} in {time()-start:.4} s')
 
-        outfile = os.path.join(path_aggreg, f'data_{day}.gz')
+        # Add column date
+        df['date'] = day
+
+        # Save in gzip-compressed .csv format
+        start = time()
         df.to_csv(outfile,
                   index=False,
                   compression='gzip')
-        break
-
-    return data
+        del df
+        print(f'Saved {outfile} in {time()-start:.4} s')
 
 
 if __name__ == '__main__':
-    #main()
-    pass
+    main()
