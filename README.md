@@ -42,3 +42,41 @@ Perform a primary analysis on German data, the same way as done in the article:
 ## Questions for TAs (optional)
 
 We had a small reflection considering the short video we had to send at the end of the milestone. Indeed, we were considering writing a paper and not implementing a story telling website. But in that case, what do you expect the video to look like? Shall we speak on a PowerPoint to present the results, or should we use the notebook and interactively present it?
+
+
+# Scraping & keywords
+
+## Review the template keywords
+
+Output of `python src/update_keywords.py`:
+
+```
+usage: update_keywords.py [-h] template domain
+
+positional arguments:
+  template    file containing newline-delimited keywords, filename pattern: *_template*
+  domain      wikipedia domain/project (en, de, fr, ...)
+
+optional arguments:
+  -h, --help  show this help message and exit
+```
+ 
+Example command:
+
+```bash
+python src/update_keywords.py data/keywords_terrorism_de_template.txt de
+```
+
+This creates a file `data/keywords_terrorism_de.txt` that we can use to scrape pageviews. 
+See the contents of `keywords_terrorism_de_template.txt` for more details about reviewing keywords.
+
+
+### More details
+
+If you want to check keywords (e.g. their translation), create a template file '<name>_template.txt' 
+(have template at the end!) and run `src/update_keywords.py`, see docstring of the script for more info.
+
+This will generate a new file `<name>_<language>.txt` that you can comment with `#`. You have to check the keywords
+mapping and then use it in the notebook to scrape pageviews. This procedure aims to simplify the scaping, since 
+article names much match exactly. 
+
