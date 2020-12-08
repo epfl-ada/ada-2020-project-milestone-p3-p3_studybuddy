@@ -13,55 +13,55 @@
 
 Common Vulnerabilities and Exposures
 Computer science
-#Computer security # not in german, but info sec exists (below)
+#Computer security 					# not in german, but info sec exists (below)
 Computing
-Verschwiegenheitspflicht # Confidentiality
-Kryptoanalyse # Cryptanalysis
+Verschwiegenheitspflicht 				# Confidentiality
+Kryptoanalyse 						# Cryptanalysis
 Cyberattack
 Cyberterrorism
-#DDoS mitigation 			# not in german
-Daten				# Data
-Richtlinie 95/46/EG (Datenschutzrichtlinie) # Data Protection Directive
-#Data anonymization 		# together with pseudonymization in German, see below
-Datenpanne			# Data breach
-Erhebung (Empirie)		# Data collection, TODO weird?
-Konsistenz (Datenspeicherung)	# Data integrity
-#Data security			# not in german, but info sec exists (see below)
-Datenspeicher			# Data storage
-Datenbank			# Database
+#DDoS mitigation 					# not in german
+Daten							# Data
+Richtlinie 95/46/EG (Datenschutzrichtlinie) 		# Data Protection Directive
+#Data anonymization 					# together with pseudonymization in German, see below
+Datenpanne						# Data breach
+Erhebung (Empirie)					# Data collection, TODO weird?
+Konsistenz (Datenspeicherung)				# Data integrity
+#Data security						# not in german, but info sec exists (see below)
+Datenspeicher						# Data storage
+Datenbank						# Database
 Denial-of-service attack
 Dictionary attack
-Verschlüsselung			# initially Encryption software, but replaced by encryption
-Wirtschaftsingenieurwesen		# Engineering management
-#Expectation of privacy		# not in german
-Häufigkeitsanalyse		# Frequency analysis
+Verschlüsselung						# initially Encryption software, but replaced by encryption
+Wirtschaftsingenieurwesen				# Engineering management
+#Expectation of privacy					# not in german
+Häufigkeitsanalyse					# Frequency analysis
 General Data Protection Regulation
 Information
 Information engineering
-#Information leakage		# not in german, but I guess the "data breach" above is similar enough
-Datenschutz			# Information privacy
-Informationssicherheit		# Information security
-#Information sensitivity		# not in german
-#Integrity			# not GDPR-related! This page refers to ethical/moral values 
+#Information leakage					# not in german, but I guess the "data breach" above is similar enough
+Datenschutz						# Information privacy
+Informationssicherheit					# Information security
+#Information sensitivity				# not in german
+#Integrity						# not GDPR-related! This page refers to ethical/moral values 
 Machine learning
 Malware
 Man-in-the-middle attack
-#Password cracking		# not in german
-Personenbezogene Daten		# Personal data
-Privatsphäre			# Privacy
-#Privacy Act 1988			# TODO: review, Electronic Communications Privacy Act von 1986 is probably not what we want
-Datenschutzrecht			# Privacy law
-#Privacy-enhancing technologies	# not in german
+#Password cracking					# not in german
+Personenbezogene Daten					# Personal data
+Privatsphäre						# Privacy
+#Privacy Act 1988					# TODO: review, Electronic Communications Privacy Act von 1986 is probably not what we want
+Datenschutzrecht					# Privacy law
+#Privacy-enhancing technologies				# not in german
 Anonymisierung und Pseudonymisierung #Pseudonymization
 SQL injection
-Schwärzung 			 #initially Sanitization (classified information)
+Schwärzung 						#initially Sanitization (classified information)
 Scalability
 Security hacker
 Side-channel attack
 Software engineering
-#Stream cipher attacks		# not in german, TODO but there is stream cipher in german
-#Transparenz (Politik) 		# Transparency (behavior), Transparenz Politik got directly from "German version of article" but doesn't seem to be the same thing...
-#Vulnerability database		# not in german
+#Stream cipher attacks					# not in german, TODO but there is stream cipher in german
+#Transparenz (Politik) 					# Transparency (behavior), Transparenz Politik got directly from "German version of article" but doesn't seem to be the same thing...
+#Vulnerability database					# not in german
 
 
 ### Nico's GDPR-related keywords template for English Wikipedia articles
@@ -72,85 +72,83 @@ Software engineering
 
 E-Government
 E-Demokratie
-Ginnie Mae			# US Gov mortgage institution --> NO
+Ginnie Mae						# US Gov mortgage institution --> NO
 Zensur im Internet
 Internet Privacy Act
 Informationsethik
-Lay All Your Love on Me		# ABBA song --> NO
+Lay All Your Love on Me					# ABBA song --> NO
 Smart Society
-Sharing Economy
+Sharing Economy						# why ?
 Informationsmanagement
 Business Intelligence
 Langzeitarchivierung
-Technology Acceptance Model
-COBIT				# Audit and governance of software tool --> why not 
-Georgia Guidestones		# Espèce de structure en pierre --> NO
-Irland				# why ?
+Technology Acceptance Model				# acceptation ou non d'une tech, pas hyper pertinent --> NO
+COBIT							# Audit and governance of software tool --> why not 
+Georgia Guidestones					# Espèce de structure en pierre --> NO
+Irland							# why ?
 Privatsphäre
-Payment Card Industry Data Security Standard
-Data Retention and Investigatory Powers Act	# uk regulation --> why not
-2020				# why ?
+Payment Card Industry Data Security Standard		# why ?
+Data Retention and Investigatory Powers Act		# uk regulation --> why not
+2020							# why ?
 Datenschutz-Grundverordnung
 Google Street View
 Hochsensibilität
-Urheberrecht			# Copyright --> why ?
-Axel Metzger			# civil and intellectual property law professor
-Geistiges Eigentum		# Propiété intellectuelle 
-Geistiges Eigentum
+Urheberrecht						# Copyright --> why ?
+Axel Metzger						# civil and intellectual property law professor --> NO
+Geistiges Eigentum					# Propiété intellectuelle --> why not
 Digitale Rechteverwaltung
-COVID-19-Pandemie in Russland	# why ?
+COVID-19-Pandemie in Russland				# why ?
 Computerethik
-Computerethik
-Rangliste der Pressefreiheit	# classement mondial des libertés de la presse --> NO
+Rangliste der Pressefreiheit				# classement mondial des libertés de la presse --> NO
 Datenschutzerklärung
-Automatic Data Processing
+Automatic Data Processing				# entreprise US --> NO
 Datenwiederherstellung
 Data-Envelopment-Analysis
 Engineering-Data-Management
 Data-Mining
 Predictive analytics
 Web Analytics
-ISO/IEC 11801			# norme pour cablage des telecoms --> NO
+ISO/IEC 11801						# norme pour cablage des telecoms --> NO
 Data Warehouse
-Extended Display Identification Data
-Bitcoin				# why ?
+Extended Display Identification Data			# structure de données --> NO
+Bitcoin							# why ?
 Persönliche Identifikationsnummer
 Identitätsmanagement
 Open Data
-DDR (Begriffsklärung)		# Désambiguité lexicale pour la DDR (deutsche demokratische republik) --> NO
+DDR (Begriffsklärung)					# Désambiguité lexicale pour la DDR (deutsche demokratische republik) --> NO
 Engineering-Data-Management
-2020				# why ?
+2020							# why ?
 QDA-Software
 Content-Management-System
-Cloud Computing			# why ?
+Cloud Computing						# why ?
 Data
-Jude Law			# why ?
-Governance			# trop general --> NO
-Law & Order: Special Victims Unit	# TV show --> NO
-Certificate Signing Request	# encryption --> NO
-QR-Code				# why ?
-Chaos Computer Club		# hacker org --> NO
+Jude Law						# why ?
+Governance						# trop general --> NO
+Law & Order: Special Victims Unit			# TV show --> NO
+Certificate Signing Request				# encryption --> NO
+QR-Code							# why ?
+Chaos Computer Club					# hacker org --> NO
 Edward Snowden
-Northrop Grumman RQ-4		# surveillance drone --> why ?
-Planetare Verteidigung		# strategie de deviation des asteroides --> NO
-Abkürzungen/Gesetze und Recht	# trop general --> NO
+Northrop Grumman RQ-4					# surveillance drone --> why ?
+Planetare Verteidigung					# strategie de deviation des asteroides --> NO
+Abkürzungen/Gesetze und Recht				# trop general --> NO
 Data Science
 United States Army Intelligence and Security Command	# why ?
 Privatsphäre
-Agnes Bruckner			# actrice US --> NO
-Glenn Greenwald			# publie les revel d'Edward S. --> why not ?
+Agnes Bruckner						# actrice US --> NO
+Glenn Greenwald						# publie les revel d'Edward S. --> why not ?
 Kritik an Facebook
 Social Media Intelligence
-Datenschutz-Grundverordnung	# doublon
-Chaos Communication Congress	# conference de hacker --> NO
-Arzneimittelbehörde		# Agence de medicaments --> NO
+Datenschutz-Grundverordnung				# doublon
+Chaos Communication Congress				# conference de hacker --> NO
+Arzneimittelbehörde					# Agence de medicaments --> NO
 Europäische Kommission
-Europäische Arzneimittel-Agentur	# medocs --> NO
-Europäische Arzneimittel-Agentur	# ENCORE medocs --> NO
-Government Communications Headquarters	# comm de l'UE --> NO
-Europarente				# rente europeenne --> NO
-Defense Intelligence Agency		# US agency --> why ?
-Georgia Guidestones		# encore les pierres --> NO
-Joshua Wong			# militant hongkongais --> NO
+Europäische Arzneimittel-Agentur			# medocs --> NO
+Europäische Arzneimittel-Agentur			# ENCORE medocs --> NO
+Government Communications Headquarters			# comm de l'UE --> NO
+Europarente						# rente europeenne --> NO
+Defense Intelligence Agency				# US agency --> why ?
+Georgia Guidestones					# encore les pierres --> NO
+Joshua Wong						# militant hongkongais --> NO
 Datafizierung
 HTTP-Cookie
