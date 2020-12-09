@@ -70,85 +70,89 @@ Software engineering
 # - tagged with [why?, why not?, NO] articles to be reviewed
 # 
 
-E-Government
-E-Demokratie
-Ginnie Mae						# US Gov mortgage institution --> NO
-Zensur im Internet
-Internet Privacy Act
-Informationsethik
-Lay All Your Love on Me					# ABBA song --> NO
-Smart Society
-Sharing Economy						# why ?
-Informationsmanagement
-Business Intelligence
-Langzeitarchivierung
+E-Government						# E-Government
+E-Demokratie						# E-Democracy
+Government-owned website				# ---- not in german
+Zensur im Internet					# Censorship on Internet
+Internet Privacy Act					# article in german
+Informationsethik					# Information ethics
+Informationsgesellschaft				# Information society
+Smart Society						# Information society concept (german only article)
+Information economy					# ---- not in german
+Informationsmanagement					# Information management
+Business Intelligence					# german article
+Langzeitarchivierung					# Long-term archiving
 Technology Acceptance Model				# acceptation ou non d'une tech, pas hyper pertinent --> NO
 COBIT							# Audit and governance of software tool --> why not 
-Georgia Guidestones					# Espèce de structure en pierre --> NO
-Irland							# why ?
-Privatsphäre
-Payment Card Industry Data Security Standard		# why ?
-Data Retention and Investigatory Powers Act		# uk regulation --> why not
-2020							# why ?
-Datenschutz-Grundverordnung
-Google Street View
-Hochsensibilität
-Urheberrecht						# Copyright --> why ?
-Axel Metzger						# civil and intellectual property law professor --> NO
+Datenschutz-Grundverordnung				# GDPR
+Richtlinie 95/46/EG (Datenschutzrichtlinie)		# Data laws of Europe
+Datenschutz						# Information privacy
+Data Security						# ---- not in german
+Vorratsdatenspeicherung					# Data retention
+Datenvernichtung					# Data erasure
+Datenschutz-Grundverordnung				# Data protection
+Data protection authorities 				# ---- not in german
+Hochsensibilität					# Haute sensibilité
+Urheberrecht						# Copyright --> why not
+Intellectual property laws in Europe			# ---- not in german
 Geistiges Eigentum					# Propiété intellectuelle --> why not
-Digitale Rechteverwaltung
-COVID-19-Pandemie in Russland				# why ?
-Computerethik
-Rangliste der Pressefreiheit				# classement mondial des libertés de la presse --> NO
-Datenschutzerklärung
-Automatic Data Processing				# entreprise US --> NO
-Datenwiederherstellung
-Data-Envelopment-Analysis
-Engineering-Data-Management
-Data-Mining
-Predictive analytics
-Web Analytics
-ISO/IEC 11801						# norme pour cablage des telecoms --> NO
-Data Warehouse
-Extended Display Identification Data			# structure de données --> NO
-Bitcoin							# why ?
-Persönliche Identifikationsnummer
-Identitätsmanagement
-Open Data
-DDR (Begriffsklärung)					# Désambiguité lexicale pour la DDR (deutsche demokratische republik) --> NO
-Engineering-Data-Management
-2020							# why ?
-QDA-Software
-Content-Management-System
-Cloud Computing						# why ?
-Data
-Jude Law						# why ?
-Governance						# trop general --> NO
-Law & Order: Special Victims Unit			# TV show --> NO
-Certificate Signing Request				# encryption --> NO
-QR-Code							# why ?
-Chaos Computer Club					# hacker org --> NO
-Edward Snowden
-Northrop Grumman RQ-4					# surveillance drone --> why ?
-Planetare Verteidigung					# strategie de deviation des asteroides --> NO
-Abkürzungen/Gesetze und Recht				# trop general --> NO
-Data Science
-United States Army Intelligence and Security Command	# why ?
-Privatsphäre
-Agnes Bruckner						# actrice US --> NO
-Glenn Greenwald						# publie les revel d'Edward S. --> why not ?
-Kritik an Facebook
-Social Media Intelligence
-Datenschutz-Grundverordnung				# doublon
-Chaos Communication Congress				# conference de hacker --> NO
-Arzneimittelbehörde					# Agence de medicaments --> NO
-Europäische Kommission
-Europäische Arzneimittel-Agentur			# medocs --> NO
-Europäische Arzneimittel-Agentur			# ENCORE medocs --> NO
-Government Communications Headquarters			# comm de l'UE --> NO
-Europarente						# rente europeenne --> NO
-Defense Intelligence Agency				# US agency --> why ?
-Georgia Guidestones					# encore les pierres --> NO
-Joshua Wong						# militant hongkongais --> NO
-Datafizierung
-HTTP-Cookie
+Digitale Rechteverwaltung				# German digital law
+Digitale Rechte						# Digital rights
+Digital hoarding					# ---- not in german
+Computerethik						# Computer Ethics
+Datenschutzerklärung					# Data privacy / privacy policy
+Internet freedom					# ---- not in german
+Engineering-Data-Management				# german article about data processing --> why not 
+Datenverarbeitung					# Data Processing
+Datenwiederherstellung					# Data recovery
+Datenanalyse						# Data Analysis
+Datenmanagement						# Data management
+Data-Mining						# Data Mining 
+Predictive analytics					# german article, why not
+Web Analytics						# german article
+Rechenzentrum						# Data centers
+Informationsintegration					# Data integration
+Data re-identification					# Identification (data)
+Anonymität						# Anonymity (data)
+Persönliche Identifikationsnummer			# Personal identification
+Identitätsmanagement					# Identity management
+Open Data						# german article, Open data
+Datenlogger						# Data logger --> why not
+Engineering-Data-Management				# german article, why not
+Data erasure software					# ---- not in german
+QDA-Software						# Computer-assisted qualitative data analysis software
+Content-Management-System				# article in german
+Big Data						# article in geman
+Daten							# Data
+Rechtsinformatik					# IT law
+Internet Governance					# german article
+Rechtsinformatik					# ---- DOUBLON
+Internet privacy organizations				# ----not in german
+Automatische Identifikation und Datenerfassung		# Automatic identification and data capture
+Online-Durchsuchung					# computer surveillance 
+Gläserner Mensch (Datenschutz)				# Mass surveillance
+Global surveillance					# ---- not in german
+Mass Intelligence-gathering systems			# ---- not in german
+Mass surveillance litigation				# ---- not in german
+Berichtswesen						# Business reporting
+Computer and network surveillance			# ---- not in german
+Dataveillance						# ---- not in german
+Glass House effect					# ---- not in german
+Global surveillance and journalism			# ---- not in german
+Internet censorship and surveillance in Europe 		# ---- not in german but article is by country (including germany)
+Sperrungen von Internetinhalten in Deutschland		# Internet censorship in Germany
+Internet in Deutschland					# Internet in Germany
+Social Media Intelligence				# article in german
+Mass media regulation 					# ---- not in german
+Communication Rights					# ---- not in german
+Regulierungsbehörde					# Government regulatory agency 
+Europäische Kommission					# European Commission
+Executive agencies of the European Commission		# ---- not in german
+Agenturen der Europäischen Union			# Agencies of the European Union 
+Surveillance Databases					# ---- not in german
+Verordnung (EU)						# European Union Regulation
+Nachrichtendienst					# Intelligence agency program 
+Individualrecht						# Individual and Group Rights
+Individualrecht						# ---- DOUBLON
+Datafizierung						# Datafication
+HTTP-Cookie						# Cookie
