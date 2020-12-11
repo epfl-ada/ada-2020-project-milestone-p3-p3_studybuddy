@@ -11,57 +11,57 @@
 # - include Privatsphäre ?
 
 
-Common Vulnerabilities and Exposures
-Computer science
-#Computer security 					# not in german, but info sec exists (below)
-Computing
-Verschwiegenheitspflicht 				# Confidentiality
-Kryptoanalyse 						# Cryptanalysis
-Cyberattack
-Cyberterrorism
-#DDoS mitigation 					# not in german
-Daten							# Data
-Richtlinie 95/46/EG (Datenschutzrichtlinie) 		# Data Protection Directive
-#Data anonymization 					# together with pseudonymization in German, see below
-Datenpanne						# Data breach
-Erhebung (Empirie)					# Data collection, TODO weird?
-Konsistenz (Datenspeicherung)				# Data integrity
-#Data security						# not in german, but info sec exists (see below)
-Datenspeicher						# Data storage
-Datenbank						# Database
-Denial-of-service attack
-Dictionary attack
-Verschlüsselung						# initially Encryption software, but replaced by encryption
-Wirtschaftsingenieurwesen				# Engineering management
-#Expectation of privacy					# not in german
-Häufigkeitsanalyse					# Frequency analysis
-General Data Protection Regulation
-Information
-Information engineering
-#Information leakage					# not in german, but I guess the "data breach" above is similar enough
-Datenschutz						# Information privacy
-Informationssicherheit					# Information security
-#Information sensitivity				# not in german
-#Integrity						# not GDPR-related! This page refers to ethical/moral values 
-Machine learning
-Malware
-Man-in-the-middle attack
-#Password cracking					# not in german
-Personenbezogene Daten					# Personal data
-Privatsphäre						# Privacy
-#Privacy Act 1988					# TODO: review, Electronic Communications Privacy Act von 1986 is probably not what we want
-Datenschutzrecht					# Privacy law
-#Privacy-enhancing technologies				# not in german
-Anonymisierung und Pseudonymisierung #Pseudonymization
-SQL injection
-Schwärzung 						#initially Sanitization (classified information)
-Scalability
-Security hacker
-Side-channel attack
-Software engineering
-#Stream cipher attacks					# not in german, TODO but there is stream cipher in german
-#Transparenz (Politik) 					# Transparency (behavior), Transparenz Politik got directly from "German version of article" but doesn't seem to be the same thing...
-#Vulnerability database					# not in german
+yCommon Vulnerabilities and Exposures
+nComputer science
+y#Computer security 					# not in german, but info sec exists (below)
+yComputing
+yVerschwiegenheitspflicht 				# Confidentiality
+yKryptoanalyse 						# Cryptanalysis
+yCyberattack
+yCyberterrorism
+n#DDoS mitigation 					# not in german
+yDaten							# Data
+yRichtlinie 95/46/EG (Datenschutzrichtlinie) 		# Data Protection Directive
+y#Data anonymization 					# together with pseudonymization in German, see below
+nDatenpanne						# Data breach
+nErhebung (Empirie)					# Data collection, TODO weird?
+yKonsistenz (Datenspeicherung)				# Data integrity
+y#Data security						# not in german, but info sec exists (see below)
+yDatenspeicher						# Data storage
+nDatenbank						# Database
+nDenial-of-service attack
+nDictionary attack
+nVerschlüsselung						# initially Encryption software, but replaced by encryption
+nWirtschaftsingenieurwesen				# Engineering management
+n#Expectation of privacy					# not in german
+nHäufigkeitsanalyse					# Frequency analysis
+yGeneral Data Protection Regulation
+nInformation
+nInformation engineering
+y#Information leakage					# not in german, but I guess the "data breach" above is similar enough
+yDatenschutz						# Information privacy
+yInformationssicherheit					# Information security
+n#Information sensitivity				# not in german
+n#Integrity						# not GDPR-related! This page refers to ethical/moral values 
+nMachine learning
+nMalware
+nMan-in-the-middle attack
+n#Password cracking					# not in german
+nPersonenbezogene Daten					# Personal data
+yPrivatsphäre						# Privacy
+n#Privacy Act 1988					# TODO: review, Electronic Communications Privacy Act von 1986 is probably not what we want
+yDatenschutzrecht					# Privacy law
+n#Privacy-enhancing technologies				# not in german
+yAnonymisierung und Pseudonymisierung #Pseudonymization
+nSQL injection
+nSchwärzung 						#initially Sanitization (classified information)
+nScalability
+ySecurity hacker
+nSide-channel attack
+nSoftware engineering
+n#Stream cipher attacks					# not in german, TODO but there is stream cipher in german
+y#Transparenz (Politik) 					# Transparency (behavior), Transparenz Politik got directly from "German version of article" but doesn't seem to be the same thing...
+y#Vulnerability database					# not in german
 
 
 ### Nico's GDPR-related keywords template for English Wikipedia articles
