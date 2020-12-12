@@ -1,0 +1,44 @@
+
+# Final list of GDPR-related keywords after the reviewing session 
+
+#Common Vulnerabilities and Exposures           # WTF ? I should have made a mistake
+Verschwiegenheitspflicht                       #Confidentiality
+Cyberterrorism
+Daten
+Richtlinie 95/46/EG (Datenschutzrichtlinie)
+Erhebung (Empirie)
+General Data Protection Regulation
+Datenschutz
+Informationssicherheit
+Personenbezogene Daten
+Privatsphäre
+Datenschutzrecht
+Anonymisierung und Pseudonymisierung
+Transparenz (Politik)
+Zensur im Internet
+Internet Privacy Act
+Informationsmanagement
+Business Intelligence
+Langzeitarchivierung
+Datenschutz-Grundverordnung
+Vorratsdatenspeicherung
+Datenvernichtung
+Digitale Rechteverwaltung
+Digitale Rechte
+Datenschutzerklärung
+Datenanalyse
+Datenmanagement
+Informationsintegration
+#Data re-identification                 # doesn't exist in german
+Anonymität
+Persönliche Identifikationsnummer
+Big Data
+Rechtsinformatik
+Internet Governance
+Automatische Identifikation und Datenerfassung
+Online-Durchsuchung
+Gläserner Mensch (Datenschutz)
+Europäische Kommission
+Verordnung (EU)
+Individualrecht
+HTTP-Cookie
