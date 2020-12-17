@@ -32,7 +32,7 @@ def read_keywords(fname):
             return line
         return line[:i].strip()
 
-    with open(fname, 'r') as f:
+    with open(fname, 'r', encoding='utf-8') as f:
         data = f.read().strip('\n').split('\n')
 
     # Handle comments
