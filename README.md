@@ -44,9 +44,20 @@ Perform a primary analysis on German data, the same way as done in the article:
 We had a small reflection considering the short video we had to send at the end of the milestone. Indeed, we were considering writing a paper and not implementing a story telling website. But in that case, what do you expect the video to look like? Shall we speak on a PowerPoint to present the results, or should we use the notebook and interactively present it?
 
 
-# Scraping & keywords
+# Project structure
 
-## Review the template keywords
+## Notebooks
+
+1. `Scraping.ipynb`: build the framework and create functions to scrape Wikipedia pageviews with python mwviews packagw
+1. `Outdated-dumps.ipynb`: exploration of the aggregated  200GB data of the deprecated Wikipedia  pagecounts dataset, 
+generate figures for the report comparing the pagecounts vs pageviews from Wikipedia REST API
+1. `MilestoneP4.ipynb`: analyse pageviews of GDPR-related articles and popular articles (i.e. control group), directly 
+scrapes pageviews based on keyword files `data/GDPR_de.txt`
+  
+
+## Scraping & keywords
+
+### Review the template keywords
 
 Output of `python src/update_keywords.py`:
 
@@ -71,7 +82,7 @@ This creates a file `data/keywords_terrorism_de.txt` that we can use to scrape p
 See the contents of `keywords_terrorism_de_template.txt` for more details about reviewing keywords.
 
 
-### More details
+#### More details
 
 If you want to check keywords (e.g. their translation), create a template file '<name>_template.txt' 
 (have template at the end!) and run `src/update_keywords.py`, see docstring of the script for more info.
@@ -79,4 +90,23 @@ If you want to check keywords (e.g. their translation), create a template file '
 This will generate a new file `<name>_<language>.txt` that you can comment with `#`. You have to check the keywords
 mapping and then use it in the notebook to scrape pageviews. This procedure aims to simplify the scaping, since 
 article names much match exactly. 
+
+### Scraping with Wikipedia REST API
+
+See the `Scraping.ipynb` notebook. The problem is that there is no data available before July 2015. 
+
+### Data from outdated pagecount dumps
+
+Note: that following hourly data files do not exist:
+
+```
+pagecounts-20150527-150000.gz
+pagecounts-20150401-010000.gz
+```
+
+The following data could not be loaded (it requires > 25 BG RAM to decompress and load it into memory, compared to 
+~1GB for all other files):
+
+```pagecounts-20150509-060000.gz```
+
 
