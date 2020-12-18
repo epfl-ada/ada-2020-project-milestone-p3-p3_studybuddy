@@ -1,7 +1,7 @@
 # Project Milestione P3: studybuddy
 
 ## Title
-Inverse Chilling Effect following General Data Protection Regulation (EU GDPR) application through Wikipedia Use
+Inverse Chilling Effect: General Data Protection Regulation application and Wikipedia Use
 
 ## Abstract
 On the 27th of April 2016, the European Parliament adopted the [General Data Protection Regulation (GDPR)](https://gdpr-info.eu/). The regulation became effective the 25th May 2018. This new european regulation sets principles applicable to any business or institution on the management of personal data inside the European Union and European Economic Area. More precisely it ensures data safeguard and privacy, and provides the user with more control and information on its data. Our project will explore if there has been a reverse chilling effect in some european states following the adoption of the regulation and its start of effectiveness. To answer this, we intend to build a new dataset using the same article keywords used in the original paper but extracted from german Wikipedia. We will focus on pageviews and explore trends before and after the aforementioned dates with two Interrupted Time Series (ITS) analyses.
